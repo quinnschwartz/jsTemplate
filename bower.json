@@ -1,9 +1,9 @@
 {
-  "name": "alarm_clock",
+  "name": "template",
   "description": "",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/erbombla/jsTemplate",
   "ignore": [
     "**/.*",
     "node_modules",
