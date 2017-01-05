@@ -84,7 +84,6 @@ gulp.task('cssBuild', function() {
     .pipe(browserSync.stream());
 });
 
-gulp.watch(["scss/*.scss"], ['cssBuild']);
 
 gulp.task('bower', ['bowerJS', 'bowerCSS']);
 
@@ -96,6 +95,7 @@ gulp.task('serve', function() {
     }
   });
 
+  gulp.watch(["scss/*.scss"], ['cssBuild']);
   gulp.watch(['js/*.js'], ['jsBuild']);
   gulp.watch(['bower.json'], ['bowerBuild'])
 });
